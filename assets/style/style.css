@@ -1,0 +1,169 @@
+:root {
+  /* color */
+  --bg-color-primary: #5b41fb;
+  --bg-color-secondary: #53acff;
+  --color-primary: #7c67fe;
+  --color-info: #160e4b;
+  --font-color-primary: #ffffff;
+  --font-color-primary-nonactive: rgba(255, 255, 255, 0.8);
+  --font-color-secondary: rgba(0, 0, 0, 0.6);
+
+  /* typography */
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  --fw-inter-medium: 500;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+body,
+h1,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 40px 150px 40px 150px;
+  background-color: var(--bg-color-primary);
+  font-family: var(--font-dm-sans);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.navbar-brand h1 {
+  font-size: 24px;
+  font-style: italic;
+  color: var(--font-color-primary);
+}
+.navbar-item {
+  display: flex;
+  gap: 32px;
+}
+.navbar-item a {
+  color: var(--font-color-primary-nonactive);
+  font-size: 16px;
+  font-weight: var(--fw-medium);
+}
+.navbar-item .active {
+  color: var(--font-color-primary);
+}
+
+.navbar-cta button {
+  padding: 10px 16px;
+  background-color: var(--color-info);
+  border: none;
+  border-radius: 8px;
+}
+.navbar-cta a {
+  color: var(--font-color-primary);
+}
+.hero {
+  padding: 56px 0px 56px 0px;
+  text-align: center;
+}
+.title h1 {
+  color: var(--font-color-primary);
+  font-weight: var(--fw-bold);
+  font-size: 36px;
+}
+.title span {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+.subtitle p {
+  color: var(--font-color-primary);
+  font-family: var(--font-inter) !important;
+  font-weight: 400;
+  font-size: 16px;
+}
+.card {
+  justify-content: center;
+  padding-top: 12px;
+  display: flex;
+  gap: 18px;
+}
+.card-item {
+  width: 28%;
+  background-color: var(--font-color-primary);
+  border-radius: 12px;
+  padding: 24px;
+  height: fit-content;
+}
+.card-type {
+  font-weight: var(--fw-bold);
+  font-size: 20px;
+  color: var(--color-info);
+}
+.card-pricing {
+  margin-top: 4px;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.card-pricing-nominal {
+  font-weight: var(--fw-bold);
+  font-size: 40px;
+  color: var(--color-info);
+}
+
+.card-pricing-duration {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--font-color-secondary);
+}
+.card-description {
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  color: var(--font-color-secondary);
+}
+.card-cta {
+  padding: 20px 0px 20px 0px;
+}
+.card-cta button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: var(--bg-color-primary);
+  border-radius: 8px;
+}
+.card-cta a {
+  color: var(--font-color-primary);
+}
+.card-features {
+}
+
+.card-features-title {
+  font-weight: var(--fw-medium);
+  font-size: 16px;
+  color: var(--font-color-secondary);
+}
+
+.card-features-list-item {
+  margin-top: 12px;
+}
+.card-features-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.card-features-item img {
+  max-height: 18px;
+}
+.card-features-item h5 {
+  font-weight: var(--fw-medium);
+  font-size: 18px;
+  color: var(--font-color-secondary);
+}
